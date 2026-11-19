@@ -1,0 +1,152 @@
+
+/* Mengatur tampilan seluruh halaman */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f7fc;
+    color: #24364b;
+    line-height: 1.6;
+}
+
+/* HEADER: bagian atas */
+header {
+    background-color: #123b63;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* NAVIGASI: menu website */
+nav {
+    background-color: #1c639a;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Tombol menu */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+/* Efek saat tombol disentuh kursor */
+nav a:hover {
+    background-color: #f5c451;
+    color: #123b63;
+}
+
+/* Mengatur jarak konten */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Bagian beranda */
+.hero {
+    background-color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    color: #123b63;
+    font-size: 28px;
+}
+
+/* Tombol utama */
+.tombol {
+    display: inline-block;
+    background-color: #1c639a;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* Efek tombol saat disentuh kursor */
+.tombol:hover {
+    background-color: #f5c451;
+    color: #123b63;
+}
+
+/* Judul materi */
+#materi h2,
+.tentang h2 {
+    text-align: center;
+    color: #123b63;
+}
+
+/* Mengatur kartu materi */
+.container-materi {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Setiap kartu materi */
+.kartu {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 3px 8px #00000015;
+}
+
+/* Judul dalam kartu */
+.kartu h3 {
+    color: #1c639a;
+}
+
+/* Bagian tentang */
+.tentang {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/* FOOTER: bagian bawah */
+footer {
+    background-color: #102e4a;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* Tampilan untuk layar HP */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        padding: 8px;
+    }
+
+    .container-materi {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+}
+
